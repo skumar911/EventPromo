@@ -1,4 +1,6 @@
 <?php
+require_once "config.php";
+
 // Initialize the session
 session_start();
 
@@ -20,10 +22,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <link rel="stylesheet" href="css/bootstrap.css">
 <style type="text/css">
     body{ font: 14px sans-serif; text-align: center; }
-    table,th,td{
+    table,td{
       margin-left: -120px;
       width: 800px;
       height: auto;
+      text-align: center;
+      border-style:solid;
+      border-width:2px;
+      border-color:#333333;
+    }
+    th{
+      width: 800px;
+      height: auto;
+      background-color: #333333;
+      color: white;
       text-align: center;
       border-style:solid;
       border-width:2px;
@@ -76,15 +88,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
           </p>
           <?php
-                $dbhost = 'localhost:8889';
-                $dbuser = 'sam';
-                $dbpass = '12345';
-                $dbname = 'sam';
-                $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-                if(! $conn ){
-                  die('Could not connect: ' . mysqli_error());
-                }
-                $result = mysqli_query($conn,"SELECT * FROM events");
+                $result = mysqli_query($link,"SELECT * FROM events");
                 echo "<table border='1'>
                 <tr>
                 <th><b>Event Name</b></th>
@@ -109,7 +113,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 echo "</tr>";
                 }
                 echo "</table>";
-                mysqli_close($conn);
+                mysqli_close($link);
            ?>
 			</div>
 			</div>

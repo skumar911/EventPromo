@@ -11,9 +11,9 @@ $dbhost = 'localhost:8889';
 $dbuser = 'sam';
 $dbpass = '12345';
 $dbname = 'sam';
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-if(! $conn ){
+if(! $link ){
   die('Could not connect: ' . mysqli_error());
 }
 echo 'Connected successfully';
@@ -21,13 +21,13 @@ echo '\n';
 if(isset($_POST['submit'])){
 
   $sql = "insert into events values('$eventname','$name','$email','$contact','$venue','$date','$details')";
-         if(mysqli_query($conn, $sql)){
+         if(mysqli_query($link, $sql)){
          echo "Values inserted successfully";
          } else {
             echo "Values not inserted ";
          }
 }
-mysqli_close($conn);
+mysqli_close($link);
 ?>
 
 
@@ -37,11 +37,11 @@ mysqli_close($conn);
       $dbuser = 'sam';
       $dbpass = '12345';
       $dbname = 'sam';
-      $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-      if(! $conn ){
+      $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+      if(! $link ){
         die('Could not connect: ' . mysqli_error());
       }
-      $result = mysqli_query($conn,"SELECT * FROM events");
+      $result = mysqli_query($link,"SELECT * FROM events");
       echo "<table border='1'>
       <tr>
       <th>Event Name</th>
@@ -67,5 +67,5 @@ mysqli_close($conn);
       }
       echo "</table>";
 
-      mysqli_close($conn);
+      mysqli_close($link);
  ?>

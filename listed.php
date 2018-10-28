@@ -1,3 +1,6 @@
+<?php
+require_once "config.php";
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -62,7 +65,7 @@
     	<input type="text" name="email" placeholder="yourname@gmail.com">
     	<label>  Contact Number </label>
     	<input type="text" name="contact" placeholder="9876543210">
-    	<label>  Eveny location </label>
+    	<label>  Event location </label>
     	<input type="text" name="venue" placeholder="Eg. 123 Cafe, Bandra">
     	<label>  Event Date </label>
       <input type="date" name="date">
@@ -81,25 +84,23 @@
     $date = $_POST['date'];
     $details = $_POST['event_details'];
 
-    $dbhost = 'localhost:8889';
-    $dbuser = 'sam';
-    $dbpass = '12345';
-    $dbname = 'sam';
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-    if(! $conn ){
+    if(!link ){
+      echo "Connection Failed!";
       die('Could not connect: ' . mysqli_error());
     }
     if(isset($_POST['submit'])){
 
       $sql = "insert into events values('$eventname','$name','$email','$contact','$venue','$date','$details')";
-             if(mysqli_query($conn, $sql)){
+             if(mysqli_query($link, $sql)){
             echo "<h2>Values inserted successfully</h2>";
              } else {
+               die('Could not insert! ' . mysqli_error());
                echo "<h2>Values not inserted</h2>";
              }
     }
-    mysqli_close($conn);
+    mysqli_close($link);
     ?>
 
 
