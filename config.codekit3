@@ -284,6 +284,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/bac.jpg": {
+		"ft": 16384,
+		"iS": 111248,
+		"oA": 0,
+		"oAP": "\/images\/bac.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/beer.jpg": {
 		"ft": 16384,
 		"iS": 139989,
@@ -315,14 +325,14 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/images\/Bhayanak.jpg": {
+	"\/images\/bhayanak.jpg": {
 		"ft": 16384,
-		"iS": 1410218,
+		"iS": 1392375,
 		"oA": 0,
-		"oAP": "\/images\/Bhayanak.jpg",
+		"oAP": "\/images\/bhayanak.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/blog-icon1.png": {
@@ -389,6 +399,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/images\/comic.jpg": {
+		"ft": 16384,
+		"iS": 20232,
+		"oA": 0,
+		"oAP": "\/images\/comic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/comment.png": {
@@ -628,6 +648,26 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/images\/mart.jpg": {
+		"ft": 16384,
+		"iS": 17906,
+		"oA": 0,
+		"oAP": "\/images\/mart.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/marti.jpg": {
+		"ft": 16384,
+		"iS": 15136,
+		"oA": 0,
+		"oAP": "\/images\/marti.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/martin.jpg": {
@@ -1104,6 +1144,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/sun.jpg": {
+		"ft": 16384,
+		"iS": 804971,
+		"oA": 0,
+		"oAP": "\/images\/sun.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/Thumbs.db": {
 		"cB": 0,
 		"ft": 8192,
@@ -1468,6 +1518,13 @@
 		"oAP": "\/listed.php",
 		"oF": 0
 		},
+	"\/login.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/login.html",
+		"oF": 0
+		},
 	"\/login.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1488,6 +1545,24 @@
 		"oA": 0,
 		"oAP": "\/news.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/register.php": {
 		"cB": 0,
