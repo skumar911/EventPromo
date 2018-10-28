@@ -164,7 +164,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       </div>
       <div class="footer-bottom">
         <div class="copy">
-       <p>© 2018 by Sam, Esha, Harsh</p>
+       <p>© 2018 by Samdharsi, Esha, Harsh</p>
       </div>
       <div class="social">
        <ul>

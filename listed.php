@@ -116,7 +116,7 @@ require_once "config.php";
      	  </div>
      	  <div class="footer-bottom">
      	  	<div class="copy">
-			   <p>© 2018 by Sam, Esha, Harsh</p>
+			   <p>© 2018 by Samdharsi, Esha, Harsh</p>
 		    </div>
 		    <div class="social">
 			   <ul>
