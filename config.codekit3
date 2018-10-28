@@ -23,6 +23,33 @@
 		"oAP": "\/bookings.html",
 		"oF": 0
 		},
+	"\/config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/config.php",
+		"oF": 0
+		},
+	"\/css\/bootstrap-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/bootstrap-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/calendar-eightysix-default.css": {
 		"aP": 1,
 		"bl": 0,
@@ -53,6 +80,66 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/responsiveform-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/responsiveform-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/responsiveform.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/responsiveform-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/responsiveform1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/responsiveform1-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/responsiveform2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/responsiveform2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/responsiveform3.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/responsiveform3-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -62,6 +149,13 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db.php",
+		"oF": 0
 		},
 	"\/events.html": {
 		"cB": 0,
@@ -1039,6 +1133,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/easyResponsiveTabs-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/easyResponsiveTabs-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/easyResponsiveTabs.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1059,12 +1163,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/jquery-v1.7.1-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery-v1.7.1-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/jquery-v1.7.1.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/jquery-v1.7.1-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/jquery.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1079,12 +1203,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/mootools-1.2.4-core-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/mootools-1.2.4-core-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/mootools-1.2.4-core.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/mootools-1.2.4-core-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/mootools-1.2.4.2-more-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/mootools-1.2.4.2-more-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1119,11 +1263,25 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/login.html": {
+	"\/listed.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/login.html",
+		"oAP": "\/listed.php",
+		"oF": 0
+		},
+	"\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/login.php",
+		"oF": 0
+		},
+	"\/logout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/logout.php",
 		"oF": 0
 		},
 	"\/news.html": {
@@ -1133,11 +1291,39 @@
 		"oAP": "\/news.html",
 		"oF": 0
 		},
+	"\/register.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/register.php",
+		"oF": 0
+		},
+	"\/reset-password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/reset-password.php",
+		"oF": 0
+		},
 	"\/video.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/video.html",
+		"oF": 0
+		},
+	"\/welcome.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/welcome.php",
+		"oF": 0
+		},
+	"\/welcome1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/welcome1.php",
 		"oF": 0
 		}
 	},

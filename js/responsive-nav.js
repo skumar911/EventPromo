@@ -1,15 +1,3 @@
-/*! responsive-nav.js v1.0.14
- * https://github.com/viljamis/responsive-nav.js
- * http://responsive-nav.com
- *
- * Copyright (c) 2018 @viljamis
- * Available under the MIT license
- */
-
-/* jshint strict:false, forin:false, noarg:true, noempty:true, eqeqeq:true,
-boss:true, bitwise:true, browser:true, devel:true, indent:2 */
-/* exported responsiveNav */
-
 var responsiveNav = (function (window, document) {
 
   var computed = !!window.getComputedStyle;
