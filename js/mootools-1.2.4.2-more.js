@@ -1,27 +1,3 @@
-//MooTools More, <http://mootools.net/more>. Copyright (c) 2006-2009 Aaron Newton <http://clientcide.com/>, Valerio Proietti <http://mad4milk.net> & the MooTools team <http://mootools.net/developers>, MIT Style License.
-
-/*
----
-
-script: More.js
-
-description: MooTools More
-
-license: MIT-style license
-
-authors:
-- Guillermo Rauch
-- Thomas Aylott
-- Scott Kyle
-
-requires:
-- core:1.2.4/MooTools
-
-provides: [MooTools.More]
-
-...
-*/
-
 MooTools.More = {
 	'version': '1.2.4.2',
 	'build': 'bd5a93c0913cce25917c48cbdacde568e15e02ef'
@@ -57,7 +33,7 @@ provides: [MooTools.Lang]
 		},
 		cascades: ['en-US']
 	};
-	
+
 	var cascaded;
 
 	MooTools.lang = new Events();
@@ -245,7 +221,7 @@ Date.implement({
 
 	diff: function(date, resolution){
 		if ($type(date) == 'string') date = Date.parse(date);
-		
+
 		return ((date - this) / Date.units[resolution || 'day'](3, 3)).toInt(); // non-leap year, 30-day month
 	},
 
@@ -254,14 +230,14 @@ Date.implement({
 	},
 
 	getDayOfYear: function(){
-		return (Date.UTC(this.get('year'), this.get('mo'), this.get('date') + 1) 
+		return (Date.UTC(this.get('year'), this.get('mo'), this.get('date') + 1)
 			- Date.UTC(this.get('year'), 0, 1)) / Date.units.day();
 	},
 
 	getWeek: function(){
 		return (this.get('dayofyear') / 7).ceil();
 	},
-	
+
 	getOrdinal: function(day){
 		return Date.getMsg('ordinal', day || this.get('date'));
 	},
@@ -461,15 +437,15 @@ Date.extend({
 	},
 
 	parsePatterns: parsePatterns, // this is deprecated
-	
+
 	defineParser: function(pattern){
 		parsePatterns.push((pattern.re && pattern.handler) ? pattern : build(pattern));
 	},
-	
+
 	defineParsers: function(){
 		Array.flatten(arguments).each(Date.defineParser);
 	},
-	
+
 	define2DigitYearStart: function(year){
 		startYear = year % 100;
 		startCentury = year - startYear;
@@ -516,10 +492,10 @@ var currentLanguage;
 
 var recompile = function(language){
 	currentLanguage = language;
-	
+
 	keys.a = keys.A = regexOf('days');
 	keys.b = keys.B = regexOf('months');
-	
+
 	parsePatterns.each(function(pattern, i){
 		if (pattern.format) parsePatterns[i] = build(pattern.format);
 	});
@@ -527,7 +503,7 @@ var recompile = function(language){
 
 var build = function(format){
 	if (!currentLanguage) return {format: format};
-	
+
 	var parsed = [];
 	var re = (format.source || format) // allow format to be regex
 	 .replace(/%([a-z])/gi,
@@ -635,10 +611,10 @@ Date.implement({
 		if (to == null) to = new Date;
 		var delta = ((to - this) / 1000).toInt();
 		if (!delta) return '0s';
-		
+
 		var durations = {s: 60, m: 60, h: 24, d: 365, y: 0};
 		var duration, vals = [];
-		
+
 		for (var step in durations){
 			if (!delta) break;
 			if ((duration = durations[step])){
@@ -648,7 +624,7 @@ Date.implement({
 				vals.unshift(delta + step);
 			}
 		}
-		
+
 		return vals.join(joiner || ':');
 	}
 
@@ -665,7 +641,7 @@ Date.extend({
 	getTimePhrase: function(delta){
 		var suffix = (delta < 0) ? 'Until' : 'Ago';
 		if (delta < 0) delta *= -1;
-		
+
 		var units = {
 			minute: 60,
 			hour: 60,
@@ -675,9 +651,9 @@ Date.extend({
 			year: 12,
 			eon: Infinity
 		};
-		
+
 		var msg = 'lessThanMinute';
-		
+
 		for (var unit in units){
 			var interval = units[unit];
 			if (delta < 1.5 * interval){
@@ -687,7 +663,7 @@ Date.extend({
 			delta /= interval;
 			msg = unit + 's';
 		}
-		
+
 		return Date.getMsg(msg + suffix).substitute({delta: delta.round()});
 	}
 
